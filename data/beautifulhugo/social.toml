@@ -90,7 +90,7 @@ icon = "fab fa-soundcloud"
 
 [[social_icons]]
 id = "spotify"
-url = "https://open.spotify.com/user/%s"
+url = "https://open.spotify.com/show/%s"
 title = "Spotify"
 icon = "fab fa-spotify"
 
