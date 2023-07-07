@@ -17,7 +17,14 @@
               {{ end }}
               <h3>You can find the show notes <a target="_blank" href="{{ .Permalink }}">here</a></h3>
             </article>
-            <h1>Previous episodes</h1>
+            <h1>All episodes</h1>
+            <div class="row">
+              <div class="col-md-4" style="margin: auto;"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+              <div class="col-md-8">
+                <a href="https://youtu.be/{{ .Params.youtube }}">YouTube</a> | 
+                <a href="https://open.spotify.com/episode/{{ .Params.spotify }}">Spotify</a>
+              </div>
+            </div>
             {{ else }}
             <div class="row">
                   <div class="col-md-4" style="margin: auto;"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
@@ -25,7 +32,7 @@
                     <a href="https://youtu.be/{{ .Params.youtube }}">YouTube</a> | 
                     <a href="https://open.spotify.com/episode/{{ .Params.spotify }}">Spotify</a>
                   </div>
-              </div>
+            </div>
             {{ end }}
           {{ end }}
         </div>
