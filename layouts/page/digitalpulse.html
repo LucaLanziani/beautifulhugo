@@ -22,8 +22,8 @@
             <div class="row">
                   <div class="col-md-4" style="margin: auto;"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
                   <div class="col-md-8">
-                    <a class="btn btn-danger" href="https://youtu.be/{{ .Params.youtube }}">YouTube</a>
-                    <a class="btn btn-success" href="https://open.spotify.com/episode/{{ .Params.spotify }}">Spotify</a>
+                    <a href="https://youtu.be/{{ .Params.youtube }}">YouTube</a> | 
+                    <a href="https://open.spotify.com/episode/{{ .Params.spotify }}">Spotify</a>
                   </div>
               </div>
             {{ end }}
